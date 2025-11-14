@@ -3,62 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Website with Navigation Bar</title>
+    <title>Campus Canvas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <script src="firstpage.js" defer></script> 
 </head>
 <body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="profile">
-            <img src="logo.png" alt="User Photo">
-            <p>CAMPUS CANVAS</p>
+
+    <div class="hero-wrapper">
+        <div class="container">
+            <nav>
+                <div class="logo">
+    <img src="logo.png" alt="My Agency Logo">
+    <span>CAMPUS CANVAS </span>
+</div>
+                <ul class="nav-links">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="images.html">Gallery</a></li>
+                    <li><a href="videos.html">Events</a></li>
+                    <li><a href="COORDINATOR DASHBOARD.html">Coordinator Dashboard</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+
+            <header class="hero-content">
+                <div class="hero-text">
+    <h1>JAYPEE INSTITUTE OF INFORMATION TECHNOLOGY</h1>
+    <p>Connect.Discover.Remember</p>
+<p>
+College life is chaotic. As students, we were tired of missing out,
+so we built Campus Canvas. It puts everything in one spot: find your crew in Hubs, 
+catch every Event, and save memories in the Gallery.
+We built it for us. Connect, get involved, and build your story.</p>
+<a href="https://www.jiit.ac.in/" class="cta-button">Read More</a>
+</div>
+                <div class="hero-image">
+                    <img src="FRONT.jpg" alt="Web development illustration">
+                </div>
+            </header>
         </div>
-        <a href="login.html">Login</a>
-        <a href="about.html">About</a>
-        <a href="images.html">Images</a>
-        <a href="video.html">Videos</a>
-        <a href="COORDINATOR DASHBOARD.html">Coordinator</a>
-        <a href="feedback.html">Feedback</a> 
     </div>
 
-    <!-- Main Content -->
-    <div class="content">
-        <!-- Image Slider -->
-        <div id="slider" class="section active">
-            <div class="slider-container">
-                <div class="slider">
-                    <img src="https://www.jiit.ac.in/sites/default/files/gallery-2_2.jpg" alt="Image 1">
-                    <img src="https://www.jiit.ac.in/sites/default/files/gallery-22.jpg" alt="Image 2">
-                    <img src="https://www.jiit.ac.in/sites/default/files/Chords%20and%20Clues.jpg" alt="Image 3">
-                </div>
-                <button class="arrow-left" onclick="prevSlide()">❮</button>
-                <button class="arrow-right" onclick="nextSlide()">❯</button>
-            </div>
-        </div>
-
-        <!-- Upcoming Events Section -->
-        <div class="upcoming-events">
-            <h2>Upcoming Events</h2>
-            <div class="events">
-                <div class="event">
-                    <h3>Event 1: Prompt Crafting</h3>
-                    <p><strong>Date:</strong> November 18, 2024</p>
-                    <p>Join us for an unforgettable journey packed with innovation and excitement.</p>
-                </div>
-                <div class="event">
-                    <h3>Event 2: AI Unplugged</h3>
-                    <p><strong>Date:</strong> November 19, 2024</p>
-                    <p>Let your creativity shine as you craft powerful prompts and challenge your AI expertise!</p>
-                </div>
-                <div class="event">
-                    <h3>Event 3: Tech Talk </h3>
-                    <p><strong>Date:</strong> November 20, 2024</p>
-                    <p>Join the fun and games while exploring AI like never before. No tech? No problem!</p>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
