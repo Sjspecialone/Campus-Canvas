@@ -1,4 +1,4 @@
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +11,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #fbc2eb 25%, #a6c1ee 50%, #ff9a9e 75%);
-    background-size: 200% 200%;
-    animation: gradientAnimation 5s ease infinite;
+    background-image: url('image.png'); /* <-- Put your image path here */
+    background-size: cover; /* Makes the image cover the whole screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+    background-attachment: fixed;
 }
 
 @keyframes gradientAnimation {
