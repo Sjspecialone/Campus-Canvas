@@ -1,80 +1,147 @@
-* {
+body {
     margin: 0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+    background-color: #f0f2f5; 
+    color: #333;
+    line-height: 1.6;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    padding: 20px;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background: linear-gradient(135deg, #fbc2eb 25%, #a6c1ee 50%, #ff9a9e 75%);
-    background-size: 200% 200%;
-    animation: gradientAnimation 5s ease infinite;
-}
-
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.about-section {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
+.works-section {
+    width: 100%;
+    max-width: 1200px; 
     text-align: center;
-    padding: 60px 20px;
-}
-
-.about-section h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.intro-text {
-    font-size: 1.2em;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.content-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #fff; 
+    border-radius: 15px;
     padding: 40px 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-.info-card {
-    background-color: #fff;
-    width: 80%;
-    max-width: 600px;
-    margin: 20px 0;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.info-card:hover {
-    transform: scale(1.05);
-}
-
-.info-card h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    color: #2575fc;
-}
-
-.info-card p, .info-card ul {
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.6;
-}
-
-.info-card ul {
-    list-style: square;
-    padding-left: 20px;
-}
-
-.info-card li {
+.main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #333;
     margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 25px; 
+}
+
+.step-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    width: 280px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    color: white;
+    padding: 15px 20px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.card-header.blue { background-color: #3f51b5; } 
+.card-header.green { background-color: #4CAF50; } 
+.card-header.orange { background-color: #FF9800; } 
+.card-header.purple { background-color: #9c27b0; } 
+
+.card-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.icon-wrapper {
+    margin-bottom: 20px;
+    color: #3f51b5; 
+    font-size: 4em; 
+}
+
+.step-card:nth-child(1) .icon-wrapper { color: #3f51b5; } 
+.step-card:nth-child(2) .icon-wrapper { color: #4CAF50; } 
+.step-card:nth-child(3) .icon-wrapper { color: #FF9800; } 
+.step-card:nth-child(4) .icon-wrapper { color: #9c27b0; } 
+
+
+.card-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card-content p {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .step-card {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2em;
+    }
+    .subtitle {
+        font-size: 1em;
+    }
+    .step-card {
+        width: 80%; 
+        max-width: 350px; 
+    }
+    .steps-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .works-section {
+        padding: 30px 15px;
+    }
+    .main-title {
+        font-size: 1.8em;
+    }
+    .subtitle {
+        font-size: 0.9em;
+    }
+    .card-content h3 {
+        font-size: 1.2em;
+    }
+    .card-content p {
+        font-size: 0.9em;
+    }
 }
